@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+:root {
+    --colorAzul: #251891;
+    --margenMisionVision: 60px; /*Se usa para setear el margen izquierdo de la misión y el derecho de la visión*/
+}
+
+body {
+    font-family: "Lato";
+    font-size: 20px;
+    background: white;
+}
+
+.contenedorMenuPrincipal {
+    background: white;
+    position: fixed;
+    margin: 0;
+    top: 0;
+    width: 100%;
+}
+
+.menuPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.enlace {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.enlace:hover {
+    background: var(--colorAzul);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.introduccion {
+    background-image: url("../img/imagenIntroduccion.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    margin-top: -150px;
+    height: 800px;
+}
+
+.textoIntroduccion {
+    margin: 380px 0px 0px 140px;
+    display: inline-block;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    width: 25%;
+    padding: 15px;
+    text-align: center;
+}
+
+.contenedorOcultoAcercaDe {
+    margin-top: -100px;
+    float: left;
+}
+
+.contenedorAcercaDe {
+    background-image: url("../img/VisionYMision.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 650px;
+}
+
+.contenedorTextoAcercaDe {
+    text-align: center;
+}
+
+.textoAcercaDe {
+    color: var(--colorAzul);
+    padding-top: 10px;
+}
+
+.contenedorMision {
+    float: left;
+    margin: 0 0 0 var(--margenMisionVision);
+}
+
+.contenedorVision {
+    float: right;
+    margin: 0 var(--margenMisionVision) 0 0;
+}
+
+.contenedorMision, .contenedorVision {
+    text-align: center;
+    border: 2px solid rgb(238,183,4);
+    border-radius: 10px;
+    max-width: 370px;
+    margin-top: 20px;
+}
+
+.tituloMision, .tituloVision {
+    color: white;
+}
+
+.textoMision, .textoVision {
+    padding: 15px;
+    color: #1412ea;
+    font-weight: bold;
+    text-align: justify;
+    line-height: 30px;
+}
+
+.contenedorServicios {
+    background-image: url("../img/Servicios.jpg");
+    background-repeat: no-repeat;
+    background-size: 100% auto;
+    height: 500px;
+}
+
+.contenedorOcultoServicios {
+    float: left;
+    margin-top: -100px;
+}
+
+.contenedorTextoServicios {
+    text-align: center;
+}
+
+.textoServicios {
+    color: white;
+    padding-top: 10px;
+}
+
+.contenedorListadoServicios {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.contenedorServicioN {
+    width: 20%;
+}
+
+.contenedorServicioN:hover {
+    background: rgba(179,179,179,0.5);
+}
+
+.enlaceAServicioN {
+    text-decoration: none;
+}
+
+
+.thumbNailServicio {
+    width: 100%;
+}
+
+.thumbNailServicio > img {
+    width: 100%;
+}
+
+.contenedorNombreServicio {
+    text-align: center;
+}
+
+.textoNombreServicio {
+    color: white;
+}
+
+.modal {
+    float: left;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -400px;
+    background: rgba(179,179,179,0.9);
+    width: 500px;
+    border-radius: 10px;
+    border: 4px solid rgb(238,183,4);
+}
+
+.tituloServicio {
+    margin-top: 2px;
+    color: var(--colorAzul);
+    font-weight: bold;
+    text-align: center;
+}
+
+.descripcionServicio {
+    text-align: justify;
+    padding: 25px;
+    line-height: 25px;
+}
+
+.modal > a {
+    margin-left: 25px;
+    margin-bottom: 15px;
+    display: inline-block;
+}
+
+.botonCerrarModal {
+    background: rgba(179,179,179,0.9);
+    padding-left: 5px;
+    padding-right: 5px;
+    border-radius: 5px;
+    border: 1px solid black;
+    cursor: pointer;
+    margin-left: 255px;
+}
+
+.botonCerrarModal:hover {
+    background: black;
+    color: white;
+}
+
+.contenedorFooter {
+    background: black;
+    text-align: center;
+}
+
+.autor {
+    color: white;
+}

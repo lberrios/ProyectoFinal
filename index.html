@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Berrios - Rocha & Asociados</title>
+    <description>Servicios legales de calidad ofrecidos por profesionales prestigiosos</description>
+    <link rel="icon" href="./img/Logo.jpg">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilosIndex.css">
+</head>
+<body>
+<div class="contenedorMenuPrincipal">
+    <section class="menuPrincipal">
+        <img class="logo" src="./img/Logo.jpg" alt="Logo de Berrios - Rocha & Asociados">
+
+        <nav class="menu">
+            <a class="enlace" href="#acercaDe">Acerca de Nosotros</a>
+            <a class="enlace" href="#servicios">Servicios</a>
+            <a class="enlace" href="./contactenos.html">Contáctenos</a>
+        </nav>
+    </section>
+</div>
+
+
+<div class="main">
+    <section class="introduccion">
+        <p class="textoIntroduccion">Atenderemos sus casos como si formara parte de nuestra familia</p>
+    </section>
+
+    <!--Este div solo sirve para poder redireccionar el enlace de Acerca de Nosotros y ajustarlo a la posición de la imagen-->
+    <div id="acercaDe" class="contenedorOcultoAcercaDe"></div>
+
+    <section class="contenedorAcercaDe">
+        <div class="contenedorTextoAcercaDe">
+            <h2 class="textoAcercaDe">Acerca de Nosotros</h2>
+        </div>
+
+        <div class="contenedorMisionVision">
+            <section class="contenedorMision">
+                <h3 class="tituloMision">Misión</h3>
+                <p class="textoMision">Ofrecer servicios de alta calidad en las diferentes ramas de la ley, por medio de un equipo de profesionales comprometidos en la defensa de los  derechos e intereses de sus clientes.</p>
+            </section>
+
+            <section class="contenedorVision">
+                <h3 class="tituloVision">Visión</h3>
+                <p class="textoVision">Ser la empresa líder en materia legal, reconocida por sus servicios de alta calidad y destacado equipo de profesionales
+                    que contribuyen al cumplimiento de las leyes del país.</p>
+            </section>
+        </div>
+    </section>
+
+    <!--Este div solo sirve para poder redireccionar el enlace de Servicios y ajustarlo a la posición de la imagen-->
+    <div id="servicios" class="contenedorOcultoServicios"></div>
+
+    <section class="contenedorServicios">
+        <section class="contenedorTextoServicios">
+            <h2 class="textoServicios">Servicios</h2>
+        </section>
+
+        <section class="contenedorListadoServicios">
+            <!--Imagen 1-->
+            <div id="contenedorServicio1" class="contenedorServicioN">
+                <a class="enlaceAServicioN" href="javascript:void(0);">
+                    <div class="thumbNailServicio">
+                        <img src="./img/Notariado.jpg" alt="">
+                    </div>
+                    <div class="contenedorNombreServicio">
+                        <p class="textoNombreServicio">Notariado</p>
+                    </div>
+                </a>
+            </div>
+
+            <div id="contenedorServicio2" class="contenedorServicioN">
+                <a class="enlaceAServicioN" href="javascript:void(0);">
+                    <div class="thumbNailServicio">
+                        <img src="./img/Abogacia.jpg" alt="">
+                    </div>
+                    <div class="contenedorNombreServicio">
+                        <p class="textoNombreServicio">Abogacía</p>
+                    </div>
+                </a>
+            </div>
+
+            <div id="contenedorServicio3" class="contenedorServicioN">
+                <a class="enlaceAServicioN" href="javascript:void(0);">
+                    <div class="thumbNailServicio">
+                        <img src="./img/Asesoramiento.jpg" alt="">
+                    </div>
+                    <div class="contenedorNombreServicio">
+                        <p class="textoNombreServicio">Asesoría Legal</p>
+                    </div>
+                </a>
+            </div>
+        </section>
+    </section> <!--Fin de contenedorServicios-->
+
+    <dialog id="modalServicio" class="modal">
+        <h3 id="tituloServicio" class="tituloServicio"></h3>
+        <p id="descripcionServicio" class="descripcionServicio"></p>
+        <a href="./contactenos.html">Contáctenos</a>
+        <button id="botonCerrarModal" class="botonCerrarModal">Cerrar</button>
+    </dialog>
+
+    <div class="contenedorFooter">
+        <p class="autor">Copyright © 2019 / Todos los derechos reservados para Luis Manuel Berríos Rocha</p>
+    </div>
+</div>  <!--Fin de Main-->
+<script src="./js/scriptModal.js"></script>
+</body>
+</html>

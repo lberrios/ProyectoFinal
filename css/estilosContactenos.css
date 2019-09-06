@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+
+:root {
+    --colorAzul: #251891;
+}
+
+body {
+    font-family: "Lato";
+    font-size: 20px;
+    background: var(--colorAzul);
+}
+
+.contenedorMenuPrincipal {
+    background: white;
+    margin: 0;
+    top: 0;
+    width: 100%;
+}
+
+.menuPrincipal {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logo {
+    width: 200px;
+}
+
+.enlace {
+    text-decoration: none;
+    color: black;
+    margin: 10px;
+    font-weight: 700;
+}
+
+.enlace:hover {
+    background: var(--colorAzul);
+    color: white;
+    border-radius: 10px 10px 0px 0px;
+}
+
+.formulario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 700px;
+}
+
+
+.formulario > input[type="text"],
+.formulario > input[type="email"],
+.formulario > textarea {
+    border: 3px solid rgb(238,183,4);
+    border-radius: 5px;
+    color: var(--colorAzul);
+    font-weight: bold;
+    padding: 10px 20px;
+}
+
+.formulario > input[type="text"],
+.formulario > input[type="email"] {
+    width: 45%;
+}
+
+.formulario > textarea {
+    width: 100%;
+    height: 100%;
+    min-width: 100%;
+    min-height: 100px;
+    max-height: 150px;
+    margin-top: 10px;
+}
+
+.boton {
+    margin-top: 10px;
+    margin: 10px auto 0px auto;
+    border: none;
+    border-radius: 4px;
+    padding: 5px;
+    color: var(--colorAzul);
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: rgb(179,179,179);
+    cursor: pointer;
+}
+
+.mapa {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.mapa iframe {
+    border-radius: 10px;
+}
